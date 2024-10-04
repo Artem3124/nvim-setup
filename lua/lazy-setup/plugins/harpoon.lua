@@ -6,7 +6,6 @@ return {
         local harpoon = require("harpoon")
         local conf = require("telescope.config").values
 
-
         harpoon.setup({
             settings = {
                 save_on_toggle = true,
@@ -48,6 +47,8 @@ return {
         vim.cmd("hi link Visual  SpellBad")
         vim.cmd("hi clear  NormalFloat")
         vim.cmd("hi link NormalFloat  NormalNC")
+        vim.cmd("hi clear FloatBorder")
+        vim.cmd("hi link FloatBorder  NormalNC")
         vim.cmd("hi clear DiagnosticUnderlineError")
         vim.cmd("hi clear DiagnosticUnderlineHint")
         vim.cmd("hi clear DiagnosticUnderlineInfo")
